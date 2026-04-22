@@ -1,0 +1,154 @@
+[2026-04-22T04:23:09Z] === ENRICH ITERATION 1 START | repo=apple/corenet sha=a5fa11a3 ===
+[2026-04-22T04:23:09Z] [iter=1] PHASE START: enrich repo=apple/corenet sha=a5fa11a3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/a5fa11a3-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/a5fa11a33f505c1ddce03a609e75ba667754afb4.nq.gz
+[2026-04-22T04:23:29Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-22T04:23:47Z] [iter=1] AST store loaded triples=2370414 load_secs=17 mem_mb=918 MB
+[2026-04-22T04:23:47Z] [iter=1] Step 2: Finding LSP targets mem_mb=918 MB
+[2026-04-22T04:23:53Z] [iter=1] LSP targets found call_sites=14218 imports=2705 extends=312 implements=0 secs=6
+[2026-04-22T04:23:58Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=918 MB
+[2026-04-22T04:24:12Z] [iter=1] Position index built positions=164880 nodes_with_types=212922 secs=14 mem_mb=918 MB
+[2026-04-22T04:24:12Z] [iter=1] Step 3: Starting LSP resolution mem_mb=918 MB already_completed_types=[] already_completed_files=0
+[2026-04-22T04:24:12Z] [iter=1] Resolving target type target_type=call_site count=14218
+[2026-04-22T04:24:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=corenet/engine/eval_segmentation.py
+[2026-04-22T04:25:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=1 resolved=81 errors=89 current=corenet/modeling/layers/normalization/layer_norm.py
+[2026-04-22T04:26:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.7 files_done=4 resolved=156 errors=151 current=corenet/data/transforms/audio_aux/mfccs.py
+[2026-04-22T04:31:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=6 resolved=443 errors=402 current=corenet/modeling/models/language_modeling/general_gpt.py
+[2026-04-22T04:32:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.1 files_done=7 resolved=508 errors=474 current=corenet/data/transforms/video.py
+[2026-04-22T04:34:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.1 files_done=8 resolved=679 errors=597 current=corenet/data/sampler/base_sampler.py
+[2026-04-22T04:34:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.7 files_done=10 resolved=748 errors=630 current=tests/modeling/models/classification/test_byteformer.py
+[2026-04-22T04:36:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.8 files_done=12 resolved=849 errors=757 current=corenet/data/loader/dataloader.py
+[2026-04-22T04:37:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.4 files_done=15 resolved=882 errors=797 current=corenet/data/datasets/utils/common.py
+[2026-04-22T04:38:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.1 files_done=18 resolved=953 errors=833 current=corenet/modeling/modules/fastvit.py
+[2026-04-22T04:39:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=19 resolved=1003 errors=894 current=corenet/modeling/models/detection/mask_rcnn.py
+[2026-04-22T04:40:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.8 files_done=20 resolved=1099 errors=1000 current=mlx_examples/clip/model.py
+[2026-04-22T04:41:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=21 resolved=1129 errors=1063 current=corenet/train_eval_pipelines/default_train_eval.py
+[2026-04-22T04:42:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.6 files_done=22 resolved=1197 errors=1108 current=corenet/engine/default_trainer.py
+[2026-04-22T04:44:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.1 files_done=23 resolved=1274 errors=1203 current=tests/metrics/base.py
+[2026-04-22T04:44:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.8 files_done=27 resolved=1290 errors=1241 current=corenet/modeling/modules/ssd_heads.py
+[2026-04-22T04:45:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.3 files_done=29 resolved=1331 errors=1273 current=tests/loss_fns/test_detection_loss.py
+[2026-04-22T04:45:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.8 files_done=31 resolved=1352 errors=1305 current=corenet/modeling/models/classification/fastvit.py
+[2026-04-22T04:46:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.4 files_done=32 resolved=1382 errors=1338 current=corenet/metrics/intersection_over_union.py
+[2026-04-22T04:47:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=34 resolved=1404 errors=1372 current=tests/modeling/models/language_modeling/test_general_gpt.py
+[2026-04-22T04:48:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.2 files_done=36 resolved=1478 errors=1447 current=corenet/modeling/models/classification/config/regnet.py
+[2026-04-22T04:49:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.3 files_done=38 resolved=1531 errors=1514 current=corenet/data/transforms/image_torch.py
+[2026-04-22T04:50:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.3 files_done=39 resolved=1593 errors=1576 current=corenet/data/text_tokenizer/sentencepiece_tokenizer.py
+[2026-04-22T04:51:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.5 files_done=41 resolved=1668 errors=1647 current=corenet/modeling/models/__init__.py
+[2026-04-22T04:52:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.2 files_done=43 resolved=1690 errors=1691 current=corenet/data/datasets/detection/coco_base.py
+[2026-04-22T04:53:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.9 files_done=45 resolved=1749 errors=1729 current=corenet/data/datasets/utils/video.py
+[2026-04-22T04:54:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.9 files_done=47 resolved=1790 errors=1792 current=corenet/__init__.py
+[2026-04-22T04:54:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.5 files_done=49 resolved=1810 errors=1831 current=corenet/data/datasets/classification/wordnet_tagged_classification.py
+[2026-04-22T04:55:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.3 files_done=50 resolved=1852 errors=1874 current=corenet/modeling/layers/positional_embedding.py
+[2026-04-22T04:56:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.3 files_done=52 resolved=1950 errors=1938 current=corenet/data/datasets/multi_modal_img_text/base_multi_modal_img_text.py
+[2026-04-22T04:57:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.3 files_done=53 resolved=1985 errors=1995 current=tools/converter_coco_stuff.py
+[2026-04-22T04:58:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.3 files_done=55 resolved=2038 errors=2059 current=mlx_examples/clip/tokenizer.py
+[2026-04-22T04:59:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.3 files_done=57 resolved=2081 errors=2119 current=tests/data/samplers/test_chain_sampler.py
+[2026-04-22T05:00:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.3 files_done=59 resolved=2113 errors=2178 current=corenet/modeling/misc/box_utils.py
+[2026-04-22T05:01:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.9 files_done=61 resolved=2135 errors=2214 current=corenet/modeling/models/classification/mobilenetv2.py
+[2026-04-22T05:01:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.5 files_done=63 resolved=2160 errors=2254 current=corenet/modeling/modules/flash_transformer.py
+[2026-04-22T05:02:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.1 files_done=65 resolved=2181 errors=2291 current=corenet/modeling/models/fsdp_wrapper.py
+[2026-04-22T05:02:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.7 files_done=67 resolved=2212 errors=2323 current=tests/metrics/test_misc.py
+[2026-04-22T05:03:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.2 files_done=69 resolved=2235 errors=2355 current=corenet/data/datasets/language_modeling/general_lm.py
+[2026-04-22T05:04:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.2 files_done=70 resolved=2289 errors=2414 current=tests/test_conventions.py
+[2026-04-22T05:05:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.9 files_done=71 resolved=2331 errors=2455 current=corenet/loss_fn/classification/focal_loss.py
+[2026-04-22T05:05:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.8 files_done=73 resolved=2405 errors=2511 current=corenet/data/video_reader/__init__.py
+[2026-04-22T05:06:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.5 files_done=75 resolved=2453 errors=2553 current=tests/optims/scheduler/test_scheduler.py
+[2026-04-22T05:07:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.2 files_done=77 resolved=2543 errors=2593 current=corenet/modeling/text_encoders/transformer.py
+[2026-04-22T05:08:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.3 files_done=78 resolved=2599 errors=2654 current=corenet/data/sampler/variable_batch_sampler.py
+[2026-04-22T05:09:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.6 files_done=81 resolved=2705 errors=2733 current=corenet/utils/import_utils.py
+[2026-04-22T05:10:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.2 files_done=83 resolved=2772 errors=2769 current=corenet/modeling/layers/normalization/__init__.py
+[2026-04-22T05:11:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.0 files_done=85 resolved=2803 errors=2819 current=corenet/loss_fn/language_modeling/cross_entropy_for_kv_prediction.py
+[2026-04-22T05:11:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.6 files_done=86 resolved=2829 errors=2853 current=corenet/modeling/models/classification/resnet.py
+[2026-04-22T05:12:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.2 files_done=87 resolved=2849 errors=2890 current=corenet/data/video_reader/pyav_reader.py
+[2026-04-22T05:12:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.8 files_done=90 resolved=2884 errors=2929 current=tests/utils/test_check.py
+[2026-04-22T05:13:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.7 files_done=93 resolved=2953 errors=2986 current=corenet/modeling/layers/activation/__init__.py
+[2026-04-22T05:15:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.0 files_done=95 resolved=3005 errors=3064 current=corenet/metrics/topk_accuracy.py
+[2026-04-22T05:16:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.9 files_done=97 resolved=3047 errors=3116 current=corenet/modeling/anchor_generator/base_anchor_generator.py
+[2026-04-22T05:16:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.7 files_done=101 resolved=3087 errors=3167 current=corenet/data/data_loaders.py
+[2026-04-22T05:17:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.6 files_done=103 resolved=3140 errors=3219 current=tests/metrics/test_retrieval_cmc_metrics.py
+[2026-04-22T05:18:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.8 files_done=105 resolved=3223 errors=3292 current=corenet/modeling/models/detection/utils/rcnn_utils.py
+[2026-04-22T05:19:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.5 files_done=106 resolved=3251 errors=3335 current=corenet/utils/ddp_utils.py
+[2026-04-22T05:20:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.3 files_done=108 resolved=3307 errors=3382 current=corenet/utils/color_map.py
+[2026-04-22T05:21:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.9 files_done=112 resolved=3334 errors=3424 current=mlx_examples/open_elm/open_elm.py
+[2026-04-22T05:22:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.2 files_done=113 resolved=3378 errors=3499 current=corenet/utils/common_utils.py
+[2026-04-22T05:23:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.9 files_done=115 resolved=3430 errors=3543 current=corenet/modeling/neural_augmentor/utils/neural_aug_utils.py
+[2026-04-22T05:24:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.6 files_done=117 resolved=3490 errors=3645 current=corenet/data/text_tokenizer/base_tokenizer.py
+[2026-04-22T05:26:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.9 files_done=119 resolved=3553 errors=3725 current=corenet/data/video_reader/base_av_reader.py
+[2026-04-22T05:26:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.5 files_done=120 resolved=3601 errors=3760 current=corenet/data/video_reader/ffmpeg_reader.py
+[2026-04-22T05:27:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.4 files_done=123 resolved=3661 errors=3812 current=corenet/data/datasets/detection/coco_mask_rcnn.py
+[2026-04-22T05:28:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.3 files_done=125 resolved=3706 errors=3870 current=corenet/optims/scheduler/multi_step.py
+[2026-04-22T05:29:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.9 files_done=128 resolved=3754 errors=3903 current=corenet/modeling/neural_augmentor/neural_aug.py
+[2026-04-22T05:29:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.6 files_done=129 resolved=3788 errors=3947 current=corenet/engine/fsdp_trainer.py
+[2026-04-22T05:30:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.2 files_done=130 resolved=3808 errors=3981 current=tests/modeling/models/test_activation_checkpointing_wrapper.py
+[2026-04-22T05:30:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.8 files_done=133 resolved=3841 errors=4018 current=tests/metrics/test_vqa_preset_score_metrics.py
+[2026-04-22T05:31:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.5 files_done=135 resolved=3874 errors=4063 current=tests/loss_fns/test_segmentation_loss.py
+[2026-04-22T05:32:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.3 files_done=140 resolved=3939 errors=4108 current=corenet/modeling/text_encoders/__init__.py
+[2026-04-22T05:33:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.3 files_done=144 resolved=3978 errors=4171 current=tests/data/datasets/language_modeling/test_general_lm.py
+[2026-04-22T05:34:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.9 files_done=146 resolved=4004 errors=4209 current=corenet/utils/download_utils.py
+[2026-04-22T05:34:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.5 files_done=150 resolved=4068 errors=4242 current=corenet/utils/registry.py
+[2026-04-22T05:35:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.2 files_done=153 resolved=4098 errors=4283 current=corenet/modeling/layers/normalization/batch_norm.py
+[2026-04-22T05:36:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.9 files_done=156 resolved=4132 errors=4322 current=corenet/modeling/models/language_modeling/kv_prediction.py
+[2026-04-22T05:36:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.7 files_done=157 resolved=4201 errors=4375 current=corenet/loss_fn/distillation/hard_distillation.py
+[2026-04-22T05:37:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.3 files_done=160 resolved=4256 errors=4410 current=corenet/data/transforms/audio.py
+[2026-04-22T05:38:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.1 files_done=161 resolved=4329 errors=4457 current=corenet/modeling/modules/regnet_modules.py
+[2026-04-22T05:38:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.8 files_done=163 resolved=4374 errors=4497 current=corenet/loss_fn/classification/cross_entropy.py
+[2026-04-22T05:39:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.3 files_done=165 resolved=4407 errors=4527 current=corenet/modeling/image_projection_layers/global_pool_2d.py
+[2026-04-22T05:40:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.2 files_done=168 resolved=4453 errors=4581 current=corenet/loss_fn/segmentation/cross_entropy.py
+[2026-04-22T05:40:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.8 files_done=171 resolved=4485 errors=4615 current=mlx_examples/clip/main_test_clip_mlx.py
+[2026-04-22T05:41:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.4 files_done=172 resolved=4504 errors=4649 current=corenet/modeling/matcher_det/ssd_matcher.py
+[2026-04-22T05:42:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.3 files_done=174 resolved=4544 errors=4704 current=corenet/options/opts.py
+[2026-04-22T05:44:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.0 files_done=175 resolved=4550 errors=4802 current=corenet/modeling/models/classification/mobilevit_v2.py
+[2026-04-22T05:44:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.7 files_done=176 resolved=4562 errors=4843 current=corenet/data/sampler/multi_scale_sampler.py
+[2026-04-22T05:45:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.3 files_done=179 resolved=4636 errors=4883 current=corenet/modeling/layers/flash_multi_head_attention.py
+[2026-04-22T05:46:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.9 files_done=182 resolved=4678 errors=4918 current=corenet/modeling/layers/activation/gelu.py
+[2026-04-22T05:47:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.5 files_done=187 resolved=4787 errors=5016 current=tests/modeling/layers/test_multi_head_attn.py
+[2026-04-22T05:48:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.5 files_done=189 resolved=4808 errors=5072 current=corenet/modeling/misc/common.py
+[2026-04-22T05:49:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.1 files_done=190 resolved=4847 errors=5112 current=corenet/modeling/models/classification/efficientnet.py
+[2026-04-22T05:50:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.9 files_done=193 resolved=4903 errors=5162 current=corenet/optims/adam.py
+[2026-04-22T05:50:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.4 files_done=196 resolved=4936 errors=5193 current=corenet/data/datasets/segmentation/base_segmentation.py
+[2026-04-22T05:51:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.2 files_done=197 resolved=4952 errors=5242 current=corenet/data/datasets/classification/imagenet_r.py
+[2026-04-22T05:51:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.8 files_done=201 resolved=4998 errors=5276 current=corenet/metrics/psnr.py
+[2026-04-22T05:52:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.4 files_done=203 resolved=5028 errors=5311 current=tests/data/collate_fns/test_collate_functions.py
+[2026-04-22T05:54:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.7 files_done=206 resolved=5095 errors=5391 current=corenet/engine/detection_utils/coco_map.py
+[2026-04-22T05:55:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.4 files_done=210 resolved=5177 errors=5434 current=corenet/data/text_tokenizer/__init__.py
+[2026-04-22T05:56:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.4 files_done=213 resolved=5212 errors=5498 current=corenet/data/sampler/utils.py
+[2026-04-22T05:57:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.2 files_done=218 resolved=5257 errors=5547 current=tests/metrics/test_psnr.py
+[2026-04-22T05:58:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.0 files_done=222 resolved=5327 errors=5595 current=corenet/metrics/metric_base.py
+[2026-04-22T05:59:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.0 files_done=225 resolved=5364 errors=5656 current=tests/data/datasets/utils/test_common.py
+[2026-04-22T05:59:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.8 files_done=227 resolved=5398 errors=5710 current=corenet/modeling/models/classification/mobilenetv3.py
+[2026-04-22T06:00:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.4 files_done=228 resolved=5410 errors=5743 current=corenet/modeling/models/classification/config/mobilevit.py
+[2026-04-22T06:01:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.0 files_done=231 resolved=5449 errors=5781 current=tests/loss_fns/test_neural_aug_compatibility.py
+[2026-04-22T06:02:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.9 files_done=235 resolved=5507 errors=5836 current=tests/data/datasets/multi_modal_img_text/zero_shot_image_classification/test_mock_imagenet.py
+[2026-04-22T06:02:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.6 files_done=241 resolved=5552 errors=5879 current=corenet/data/sampler/video_variable_seq_sampler.py
+[2026-04-22T06:03:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.1 files_done=245 resolved=5597 errors=5911 current=corenet/modeling/modules/pspnet_module.py
+[2026-04-22T06:03:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.8 files_done=247 resolved=5629 errors=5952 current=corenet/modeling/layers/global_pool.py
+[2026-04-22T06:04:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.3 files_done=251 resolved=5663 errors=5983 current=tests/data/datasets/classification/mock_wordnet_tagged_classification.py
+[2026-04-22T06:04:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.8 files_done=253 resolved=5704 errors=6014 current=corenet/modeling/anchor_generator/ssd_anchor_generator.py
+[2026-04-22T06:05:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.4 files_done=257 resolved=5772 errors=6054 current=corenet/data/transforms/common.py
+[2026-04-22T06:06:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.7 files_done=262 resolved=5844 errors=6132 current=tests/data/datasets/classification/mock_imagenet.py
+[2026-04-22T06:07:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.3 files_done=266 resolved=5876 errors=6168 current=tests/data/datasets/audio_classification/test_speech_commands_v2.py
+[2026-04-22T06:08:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.9 files_done=269 resolved=5916 errors=6195 current=corenet/data/collate_fns/collate_functions.py
+[2026-04-22T06:08:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.4 files_done=274 resolved=5966 errors=6227 current=corenet/data/collate_fns/__init__.py
+[2026-04-22T06:09:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.1 files_done=278 resolved=5990 errors=6270 current=corenet/data/datasets/classification/base_imagenet_shift_dataset.py
+[2026-04-22T06:09:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.7 files_done=283 resolved=6037 errors=6305 current=corenet/modeling/modules/squeeze_excitation.py
+[2026-04-22T06:10:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.2 files_done=288 resolved=6067 errors=6338 current=corenet/modeling/models/classification/config/mobilenetv3.py
+[2026-04-22T06:11:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.9 files_done=295 resolved=6103 errors=6382 current=corenet/optims/sgd.py
+[2026-04-22T06:11:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.6 files_done=301 resolved=6147 errors=6424 current=corenet/cli/main_eval.py
+[2026-04-22T06:12:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.1 files_done=306 resolved=6173 errors=6455 current=corenet/utils/activation_checkpointing_wrapper.py
+[2026-04-22T06:12:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.6 files_done=312 resolved=6221 errors=6487 current=corenet/utils/retry_utils.py
+[2026-04-22T06:13:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.2 files_done=320 resolved=6254 errors=6522 current=tests/modeling/models/audio_classification/test_byteformer.py
+[2026-04-22T06:13:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.8 files_done=326 resolved=6288 errors=6561 current=corenet/modeling/image_projection_layers/base_image_projection.py
+[2026-04-22T06:14:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.4 files_done=337 resolved=6325 errors=6595 current=tests/engine/test_training_engine.py
+[2026-04-22T06:15:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.9 files_done=341 resolved=6364 errors=6626 current=corenet/loss_fn/segmentation/base_segmentation_criteria.py
+[2026-04-22T06:15:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.4 files_done=351 resolved=6411 errors=6660 current=tests/transforms/test_audio_bytes.py
+[2026-04-22T06:16:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.0 files_done=359 resolved=6455 errors=6697 current=corenet/modeling/layers/normalization/instance_norm.py
+[2026-04-22T06:16:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.5 files_done=367 resolved=6483 errors=6728 current=corenet/modeling/layers/softmax.py
+[2026-04-22T06:17:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.0 files_done=381 resolved=6526 errors=6762 current=corenet/loss_fn/multi_modal_img_text/base_multi_modal_img_text_criteria.py
+[2026-04-22T06:17:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.6 files_done=395 resolved=6569 errors=6794 current=corenet/cli/main_train.py
+[2026-04-22T06:18:03Z] [iter=1] Target type resolved target_type=call_site resolved=6593 errors=6815 secs=6831 mem_mb=918 MB
+[2026-04-22T06:18:03Z] [iter=1] Resolving target type target_type=import_statement count=2705
+[2026-04-22T06:18:12Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=115.1 files_done=225 resolved=1706 errors=0 current=corenet/loss_fn/classification/base_classification_criteria.py
+[2026-04-22T06:18:16Z] [iter=1] Target type resolved target_type=import_statement resolved=2577 errors=0 secs=12 mem_mb=918 MB
+[2026-04-22T06:18:16Z] [iter=1] Resolving target type target_type=extends_clause count=312
+[2026-04-22T06:18:20Z] [iter=1] Target type resolved target_type=extends_clause resolved=310 errors=0 secs=5 mem_mb=918 MB
+[2026-04-22T06:19:18Z] [iter=1] Step 5: Writing final enrichment file triples=156027
+[2026-04-22T06:19:21Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/a5fa11a33f505c1ddce03a609e75ba667754afb4.nq.gz size_kb=3867
+[2026-04-22T06:19:21Z] [iter=1] PHASE END: enrich elapsed_s=6973 elapsed_min=116.2 total_triples=156027
